@@ -1,49 +1,87 @@
-<!DOCTYPE html>  
-<html lang="ru">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Магазин компьютерных запчастей</title>  
-    <link rel="stylesheet" href="styles.css"> 
-</head>  
-<body>  
-    <header>  
-        <div class="logo">Логотип</div>  
-        <div class="contact-info">  
-            <p>Телефон: 778104439(арзубек)</p>  
-            <p>Адрес: ошю.hbk</p>  
-        </div>  
-    </header>  
-    <main>  
-        <section class="hero">  
-            <h1>Добро пожаловать в наш магазин!</h1>  
-            <p>Лучшие запчасти для вашего ПК. У нас все для геймеров и профессионалов!</p>  
-            <button class="shop-now">Купить сейчас</button>  
-        </section>  
-        <section class="product-cards">  
-            <h2>Наши товары</h2>  
-            <div class="product-card">Материнские платы</div>  
-            <div class="product-card">Процессоры</div>  
-            <div class="product-card">Видеокарты</div>  
-            <div class="product-card">Блоки питания</div>  
-            <div class="product-card">Корпуса</div>  
-            <div class="product-card">Кулеры</div>  
-            <div class="product-card">Оперативная память</div> <!-- Новый элемент -->  
-            <div class="product-card">SSD и HDD</div> <!-- Новый элемент -->  
-        </section>  
-        <section class="special-offers">  
-            <h2>Специальные предложения</h2>  
-            <p>Скидка 20% на все видеокарты до конца месяца!</p>  
-            <p>Бесплатная доставка при заказе от 5000 рублей.</p>  
-        </section>  
-    </main>  
-    <footer>  
-        <p>Магазин компьютерных запчастей</p>  
-        <div class="footer-links">  
-            <a href="#">Политика конфиденциальности</a>  
-            <a href="#">Условия использования</a>  
-            <a href="#">Контакты</a> <!-- Новый элемент -->  
-        </div>  
-    </footer>  
-</body>  
-</html>  
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин Компьютерных Запчастей</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="#" class="logo">КомпЗапчасти</a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#products">Товары</a></li>
+          <li><a href="#offers">Акции</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Добро пожаловать в Магазин Запчастей</h1>
+        <p>Идеальное место для обновления вашего ПК. Лучшие бренды по отличным ценам!</p>
+        <a href="#products" class="btn">Смотреть товары</a>
+      </div>
+    </section>
+    <section id="products" class="products">
+      <div class="container">
+        <h2>Наш ассортимент</h2>
+        <div class="product-grid">
+          <div class="product-item">Материнские платы</div>
+          <div class="product-item">Процессоры</div>
+          <div class="product-item">Видеокарты</div>
+          <div class="product-item">Блоки питания</div>
+          <div class="product-item">Корпуса</div>
+          <div class="product-item">Охлаждение</div>
+          <div class="product-item">ОЗУ</div>
+          <div class="product-item">Накопители</div>
+        </div>
+      </div>
+    </section>
+    <section id="offers" class="special-offers">
+      <div class="container">
+        <h2>Специальные предложения</h2>
+        <div class="offers-content">
+          <article class="offer">
+            <h3>Скидка на видеокарты</h3>
+            <p>Скидка 20% до конца месяца!</p>
+          </article>
+          <article class="offer">
+            <h3>Бесплатная доставка</h3>
+            <p>При заказе от 100 сом.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Свяжитесь с нами</h2>
+        <form action="send.php" method="post" class="contact-form">
+          <input type="text" name="name" placeholder="Ваше имя" required>
+          <input type="email" name="email" placeholder="Ваш Email" required>
+          <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+          <button type="submit" class="btn">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Магазин Компьютерных</p>
+      <div class="footer-nav">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Условия использования</a>
+        <a href="#">Контакты</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
